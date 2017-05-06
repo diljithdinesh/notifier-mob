@@ -1,0 +1,13 @@
+<ion-view view-title="Notifier">
+  <ion-content>
+    <h3 style="margin-bottom: 10px">Reminders</h3>
+    <ion-item><b>Vehicle</b> <i style="float:right">{{vModel}}</i></ion-item>
+    <ion-item><b>Buy date</b> <i style="float:right">{{buyDate}}</i></ion-item>
+    <ion-item><b>Last service</b> <i style="float:right">{{vLService}}</i> <i>{{vLServiceDays}} days ago</i></ion-item>
+    <ion-item><b>Next Service</b> <i style="float:right">{{nService}}</i> <i>{{nServiceDays}} days to go</i></ion-item>
+  </ion-content>
+  <center>
+    <a class="button button-outline button-balanced" style="top:320px" ng-click="pgReload();">Refresh</a>
+  </center>
+</ion-view>
+
